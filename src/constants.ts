@@ -1,0 +1,11 @@
+export const bold = "**";
+export const italic = "*";
+export const italicWithBold = "***";
+export const headingLevel1 = "# ";
+export const headingLevel2 = "## ";
+export const headingLevel3 = "### ";
+export const headingLevel4 = "#### ";
+export const headingLevel5 = "##### ";
+export const headingLevel6 = "###### ";
+export const code = "`";
+export const strikeThrough = "~~";

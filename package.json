@@ -1,0 +1,98 @@
+{
+  "name": "markdown-commands",
+  "displayName": "Markdown Commands",
+  "description": "A collection of basic markdown commands",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "markdown-commands.bold",
+        "title": "Markdown: Bold",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.code",
+        "title": "Markdown: Code",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.headingLevel1",
+        "title": "Markdown: Heading Level 1",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.headingLevel2",
+        "title": "Markdown: Heading Level 2",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.headingLevel3",
+        "title": "Markdown: Heading Level 3",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.headingLevel4",
+        "title": "Markdown: Heading Level 4",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.headingLevel5",
+        "title": "Markdown: Heading Level 5",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.headingLevel6",
+        "title": "Markdown: Heading Level 6",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.italic",
+        "title": "Markdown: Italic",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.italicWithBold",
+        "title": "Markdown: Italic and Bold",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "markdown-commands.strikeThrough",
+        "title": "Markdown: Strikethrough",
+        "when": "editorLangId == markdown"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
