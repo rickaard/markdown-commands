@@ -1,10 +1,16 @@
 {
   "name": "markdown-commands",
+  "author": "Rickard Jonsson",
+  "publisher": "rickaard",
   "displayName": "Markdown Commands",
   "description": "A collection of basic markdown commands",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.87.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rickaard/markdown-commands"
   },
   "categories": [
     "Other"
